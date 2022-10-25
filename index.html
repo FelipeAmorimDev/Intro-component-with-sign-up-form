@@ -8,10 +8,10 @@
 
   <title>Frontend Mentor | Intro component with sign up form</title>
 
-
+  <link rel="stylesheet" href="./style/style.css">
   <style>
     .attribution {
-      font-size: 11px;
+      font-size: 1.2rem;
       text-align: center;
     }
 
@@ -29,26 +29,46 @@
 
 <body>
 
-  <main class="main-container">
-    <header class="header-component">
-      <h1>Learn to code by watching others</h1>
-      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
-        but understanding how developers think is invaluable.</p>
-    </header>
+  <main class="main-container-bg">
+    <div class="main-container">
+      <header class="header-component">
+        <h1 class="font-1-xxl cor-3">Learn to code by watching others</h1>
+        <p class="font-1-s-m cor-6">See how experienced developers solve problems in real-time. Watching scripted
+          tutorials is great,
+          but understanding how developers think is invaluable.</p>
+      </header>
 
-    <div class="signin-container">
-      <button>Try it free 7 days then $20/mo. thereafter</button>
+      <div class="signin-container">
 
-      <div class="signin-form">
-        <form action="">
-          <input type="text" name="name" id="name-user">
-          <input type="text" name="lastname" id="lastname-user">
-          <input type="email" name="email" id="email-user">
-          <input type="password" name="password" id="password-user">
+        <button class="font-1-s-r cor-3"><span class="font-1-s-sb">Try it free 7 days</span> then $20/mo.
+          thereafter</button>
 
-          <input type="submit" value="Claim your free trial">
-          <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
-        </form>
+
+        <div class="signin-form">
+          <form action="">
+            <input type="text" name="name" id="name-user" placeholder="Name" class="" required>
+            <div class="error-msg">
+              <p>First Name cannot be empty.</p>
+            </div>
+            <input type="text" name="lastname" id="lastname-user" placeholder="Last Name" class="" required>
+            <div class="error-msg">
+              <p>Last Name cannot be empty.</p>
+            </div>
+            <input type="email" name="email" id="email-user" placeholder="Email Address" class="" required>
+            <div class="error-msg">
+              <p>Looks like this is not an email
+              </p>
+            </div>
+            <input type="password" name="password" id="password-user" placeholder="Password" class="" required>
+            <div class="error-msg">
+              <p>Password cannot be empty.</p>
+            </div>
+
+            <input type="submit" value="Claim your free trial" class="cor-3 font-1-s-sb">
+            <p class="cor-2 font-1-s-r">By clicking the button, you are agreeing to our <strong class="cor-p1">Terms and
+                Services</strong></p>
+          </form>
+        </div>
       </div>
     </div>
   </main>
@@ -56,9 +76,11 @@
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">FelipeAmorimDev</a>.
     </p>
   </footer>
+
+  <script src="./script/script.js"></script>
 </body>
 
 </html>

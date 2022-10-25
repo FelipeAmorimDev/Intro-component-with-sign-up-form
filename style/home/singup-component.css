@@ -1,0 +1,155 @@
+::placeholder {
+  color: var(--c1,#565656);
+}
+
+.main-container-bg{
+  background-color: var(--color-p1);
+  background-image: url("../../images/bg-intro-desktop.png");
+  padding: 120px 0px;
+}
+
+.main-container{
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  max-width: 1440px;
+  margin: 0 auto;
+  align-items: center;
+  
+}
+
+.header-component{
+  padding: 60px;
+}
+
+.header-component p{
+  max-width: 49ch;
+  margin-top: 40px;
+}
+
+.signin-container  button{
+  background-color: var(--color-5);
+  border-radius: 4px;
+  border: none;
+  width: 100%;
+  margin-bottom: 30px;
+  box-shadow: 1px 8px 9px rgba(117, 117, 117, 0.642);
+  
+}
+
+.signin-container{
+  padding: 60px;
+  
+}
+
+.signin-form{
+  background-color: var(--color-3);
+  padding: 42px;
+  border-radius: 10px;
+}
+
+.signin-form form {
+  display: grid;
+  gap: 20px;
+}
+
+.signin-form form input:not([type="submit"]){
+  padding: 16px 32px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  border-radius: 4px;
+  border: .5px solid var(--color-4);
+  border-color: var(--color-4);
+  outline-color: var(--color-1);
+}
+
+.signin-form form [type="submit"]{ 
+  background-color: var(--color-p2);
+  border-radius: 4px;
+  border: none;
+  text-transform: uppercase;
+  box-shadow: 0px 8px 1px hsl(154, 55%, 46%);;
+}
+
+.signin-form form [type="submit"]:hover{ 
+  background-color: hsl(154, 61%, 65%);
+  box-shadow: 0px 8px 1px hsla(154, 44%, 49%, 0.913);;
+}
+
+.signin-form p{
+  text-align: center;
+}
+
+
+/* Error Configs */
+.error-msg{
+  display: none;
+}
+.error-msg p{ 
+
+font-family: 'Poppins', sans-serif;
+font-size: .8rem;
+text-align: right;
+color: var(--color-p1);
+
+}
+
+.error-img{
+  
+  background-image: url("../../images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) center; /*xi*/
+}
+
+
+
+
+@media (max-width:1200px){
+
+  .header-component{
+    padding-right: 0px;
+  }
+  .signin-form form input:not([type="submit"]){
+    padding: 10px 20px;
+   
+  }
+}
+
+@media (max-width:900px){
+  .main-container-bg{
+  padding: 0px 0px;
+  }
+  .main-container{
+    grid-template-columns: 1fr;
+  }
+  .header-component{
+    padding-bottom: 0px;
+  }
+
+}
+
+@media (max-width:600px){
+  .header-component{
+    padding: 20px;
+    text-align: center;
+  }
+
+  .header-component h1{
+    margin-top: 32px;
+  }
+
+  .signin-container{
+    padding: 20px;
+    
+  }
+
+  .signin-form form input:not([type="submit"]){
+    font-size: .9rem;
+  }
+
+  .signin-form{
+  padding: 20px;
+  }
+}
