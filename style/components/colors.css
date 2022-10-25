@@ -1,0 +1,28 @@
+:root{
+  --color-p1:hsl(0, 100%, 74%);
+  --color-p2:hsl(154, 59%, 51%);
+
+  --color-0:hsl(248, 32%, 49%);
+  --color-1:hsl(249, 10%, 26%);
+  --color-2:hsl(246, 25%, 77%);
+}
+
+.cor-p1{
+  color:var(--color-p1)
+}
+
+.cor-p2{
+  color:var(--color-p2)
+}
+
+.cor-0{
+  color:var(--color-0)
+}
+
+.cor-1{
+  color:var(--color-1)
+}
+
+.cor-2{
+  color:var(--color-2)
+}
