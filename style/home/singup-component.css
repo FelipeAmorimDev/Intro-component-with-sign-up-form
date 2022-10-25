@@ -18,7 +18,12 @@
 }
 
 .header-component{
-  padding: 60px;
+  padding: 60px 120px;
+  padding-right: 0px;
+  place-self: center;
+  justify-self: flex-start;
+  
+  
 }
 
 .header-component p{
@@ -38,6 +43,7 @@
 
 .signin-container{
   padding: 60px;
+  padding-left: 0px;
   
 }
 
@@ -125,7 +131,12 @@ color: var(--color-p1);
     grid-template-columns: 1fr;
   }
   .header-component{
+    padding: 60px;
     padding-bottom: 0px;
+  }
+
+  .signin-container{
+    padding: 60px;
   }
 
 }
@@ -145,10 +156,7 @@ color: var(--color-p1);
     
   }
 
-  .signin-form form input:not([type="submit"]){
-    font-size: .9rem;
-  }
-
+  
   .signin-form{
   padding: 20px;
   }
