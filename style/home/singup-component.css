@@ -5,7 +5,7 @@
 .main-container-bg{
   background-color: var(--color-p1);
   background-image: url("../../images/bg-intro-desktop.png");
-  padding: 120px 0px;
+  padding: 60px 0px;
 }
 
 .main-container{
